@@ -1,0 +1,47 @@
+{
+  "best_model": "GradientBoosting",
+  "metrics": {
+    "LinearRegression": {
+      "r2": 0.6529,
+      "mae": 970043.4,
+      "rmse": 1324506.96,
+      "cv_r2_mean": 0.647,
+      "cv_r2_std": 0.0367
+    },
+    "RandomForest": {
+      "r2": 0.621,
+      "mae": 1005985.04,
+      "rmse": 1384134.96,
+      "cv_r2_mean": 0.5856,
+      "cv_r2_std": 0.0364
+    },
+    "GradientBoosting": {
+      "r2": 0.6651,
+      "mae": 968733.84,
+      "rmse": 1300981.05,
+      "cv_r2_mean": 0.5708,
+      "cv_r2_std": 0.029
+    }
+  },
+  "features": {
+    "numeric": [
+      "area",
+      "bedrooms",
+      "bathrooms",
+      "stories",
+      "parking"
+    ],
+    "binary": [
+      "mainroad",
+      "guestroom",
+      "basement",
+      "hotwaterheating",
+      "airconditioning",
+      "prefarea"
+    ],
+    "categorical": [
+      "furnishingstatus"
+    ]
+  },
+  "target": "price"
+}
